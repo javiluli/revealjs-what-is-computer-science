@@ -84,25 +84,25 @@
 
             <div class="container-imgs d-grid grid-template-rows-2">
               <pre style="font-size: 1rem"><code data-line-numbers data-trim data-noescape>
-                import op from "/operaciones.js";
+                import op from "/operations.js";
 
                 const input = document.getElementById("input");
                 const btn = document.getElementById("btn");
                 
-                const calculadora = (operador) => {
-                  switch (operador) {
+                const calculator = (operator) => {
+                  switch (operator) {
                     case 1:
-                      return op.suma(10, 6);
+                      return op.add(10, 6);
                     case 2:
-                      return op.resta(5, 3);
+                      return op.subtract(5, 3);
                     case 3:
-                      return op.mult(26, 3);
+                      return op.multiply(26, 3);
                     case 4:
-                      return op.div(125, 4);
+                      return op.divide(125, 4);
                   }
                 };
                 
-                btn.addEventListener("click", () => console.log(calculadora(btn.input)));
+                btn.addEventListener("click", () => console.log(calculator(btn.input)));
                 </code></pre>
             </div>
           </section>
